@@ -1,6 +1,6 @@
-﻿string [] incomingArray = {"One", "Two", "Three", "2", "54664", "+-/*>?", ".>"};
+﻿string[] incomingArray = { "One", "Two", "Three", "2", "54664", "+-/*>?", ".>" };
 
-void PrintArray (string [] arrayToPrint)
+void PrintArray(string[] arrayToPrint)
 {
     Console.Write("[");
     for (int i = 0; i < arrayToPrint.Length; i++)
@@ -13,9 +13,9 @@ void PrintArray (string [] arrayToPrint)
     Console.Write("]");
 }
 
-string [] NoMoreThreeSymbolsInArray(string [] dirtyArray)
+string[] NoMoreThreeSymbolsInArray(string[] dirtyArray)
 {
-    string[] exitingArray = new string [dirtyArray.Length];
+    string[] exitingArray = new string[dirtyArray.Length];
     for (int i = 0; i < dirtyArray.Length; i++)
     {
         string random = dirtyArray[i];
@@ -32,6 +32,6 @@ string [] NoMoreThreeSymbolsInArray(string [] dirtyArray)
 }
 
 PrintArray(incomingArray);
-string [] showcaseArray = NoMoreThreeSymbolsInArray(incomingArray);
+string[] showcaseArray = NoMoreThreeSymbolsInArray(incomingArray);
 Console.Write(" -> ");
 PrintArray(showcaseArray);
